@@ -10,13 +10,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { TabComponent } from './tabs/tab/tab.component';
+import { EagerlyComponent } from './tabs/eagerly/eagerly.component';
+import { LazyComponent } from './tabs/lazy/lazy.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    TabComponent
+    TabComponent,
+    EagerlyComponent,
+    LazyComponent
   ],
   imports: [
     BrowserModule,

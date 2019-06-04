@@ -1,3 +1,18 @@
-<p>
-  tab works!
-</p>
+<nz-tabset>
+  <nz-tab nzTitle="Tab Eagerly 1">
+    <app-eagerly></app-eagerly>
+  </nz-tab>
+  <nz-tab nzTitle="Tab Eagerly 2">
+    <app-eagerly></app-eagerly>
+  </nz-tab>
+  <nz-tab nzTitle="Tab Lazy 1">
+    <ng-template nz-tab>
+      <app-lazy></app-lazy>
+    </ng-template>
+  </nz-tab>
+  <nz-tab nzTitle="Tab Lazy 2">
+    <ng-template nz-tab>
+      <app-lazy></app-lazy>
+    </ng-template>
+  </nz-tab>
+</nz-tabset>
